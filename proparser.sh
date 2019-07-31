@@ -34,7 +34,7 @@ PS3='
 
 
  '
-options=("Domain Swap" "Add Numbers And Swap Case" "Number Swap" "Quit")
+options=("Domain Swap" "Add Numbers And Swap Case" "Email Numbers To No Numbers In Password Transfer" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -92,7 +92,11 @@ ls -l '$file'
 
 echo 'Finding All Strings Containing Passwords Without Numeric Appendages' 
 
-grep -riahv -E ':.*[a-z][0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9].*' $file > nonumbers.txt
+grep -riahv -E '[0-9]+$' $file > nonumbers.txt
+
+echo 'Finding All Strings Containing Passwords Without Numeric Appendages' 
+
+grep -riah -E '[0-9]+$' $file > numbers.txt
 
 echo 'Finding All Strings Containing Uppercase Passwords Without Numeric Apendages'
 
@@ -132,7 +136,7 @@ cat parsedmix123added.txt >> numbersmix.txt
 
 echo 'Finding All Strings Containg Uppercase Passwords With Preexisting Numeric Apendages'
 
-grep -rah -E '(:[A-Z])' $file > unparsedupperall.txt
+grep -rah -E '(:[A-Z])' numbers.txt > unparsedupperall.txt
 
 echo 'Swapping Case On All Strings Containg Uppercase Passwords With Preexisting Numeric Apendages'
 
@@ -140,7 +144,7 @@ sed -e 's/\(:[A-Z]\)/\L\1/' unparsedupperall.txt > parsedlowerall.txt
 
 echo 'Finding All Strings Containg Lowercase Passwords With Preexisting Numeric Apendages'
 
-grep -rah -E '(:[a-z])' $file > unparsedlowerall.txt
+grep -rah -E '(:[a-z])' numbers.txt > unparsedlowerall.txt
 
 echo 'Swapping Case On All Strings Containg Uppercase Passwords With Preexisting Numeric Apendages'
 
@@ -169,6 +173,8 @@ echo 'Strings Successfully Obfuscated!!!'
 echo 'Job Done, Cleaning Up Temporary Files'
 
 rm nonumbers.txt 
+
+rm numbers.txt
 
 rm unparsedupper.txt
 
@@ -217,33 +223,24 @@ DonJuji Loves You, Press Enter To Return To Menu'
 
             ;;
        
-        "Number Swap")
+        "Email Numbers To No Numbers In Password Transfer")
             
 
 read -e -p 'Bro Plz, enter that combo, Plz bro?: ' file
 ls -l '$file'
 
-echo 'Finding All Strings Containing Pre-Existing Numeric Apendages'
 
-grep -riah -E ':.*[a-z][0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9].*' $file > preexistingapendegaes.txt
+echo 'Prequalifying Lines For Transfer'
 
-echo 'Swapping All Strings Containing Pre-Existing Numeric Apendage Of 1 To 123'
+grep -riah -E '^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20}$)' $file > prequalifynum2nonum.txt
 
-sed -e 's/[0-9]+$/123/' preexistingapendegaes.txt > swappedto123.txt
+echo 'Transferring Numbers'
 
-echo 'Swapping All Strings Containing Pre-Existing Numeric Apendage Of 123 To 1'
-
-sed -e 's/[0-9]+$/1/' preexistingapendegaes.txt > swappedto1.txt
-
-echo 'Adding All Strngs Containing Newly Swapped Numeric Apendages Together'
-
-cat swappedto123.txt > numswapmix.txt 
-
-cat swappedto1.txt >> numswapmix.txt
+sed -E 's/^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20}$)/\1\2\3\4\2/' prequalifynum2nonum.txt > parsednum2nonum.txt
 
 echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
 
-LC_ALL=C sort -Ru numswapmix.txt > numberswappedresult.txt
+LC_ALL=C sort -Ru prequalifynum2nonum.txt.txt > num2nonumresult.txt
 
 clear
 
@@ -251,13 +248,6 @@ echo 'Strings Successfully Obfuscated!!!'
 
 echo 'Job Done, Cleaning Up Temporary Files'
 
-rm swappedto1.txt
-
-rm swappedto123.txt
-
-rm numswapmix.txt
-
-rm preexistingapendegaes.txt
 
 read -p '
 
