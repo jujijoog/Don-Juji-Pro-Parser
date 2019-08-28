@@ -1,17 +1,17 @@
 read -p '
-██████╗  ██████╗ ███╗   ██╗         ██╗██╗   ██╗     ██╗██╗███████╗          
-██╔══██╗██╔═══██╗████╗  ██║         ██║██║   ██║     ██║██║██╔════╝          
-██║  ██║██║   ██║██╔██╗ ██║         ██║██║   ██║     ██║██║███████╗          
-██║  ██║██║   ██║██║╚██╗██║    ██   ██║██║   ██║██   ██║██║╚════██║          
-██████╔╝╚██████╔╝██║ ╚████║    ╚█████╔╝╚██████╔╝╚█████╔╝██║███████║          
-╚═════╝  ╚═════╝ ╚═╝  ╚═══╝     ╚════╝  ╚═════╝  ╚════╝ ╚═╝╚══════╝          
+¦¦¦¦¦¦+  ¦¦¦¦¦¦+ ¦¦¦+   ¦¦+         ¦¦+¦¦+   ¦¦+     ¦¦+¦¦+¦¦¦¦¦¦¦+          
+¦¦+--¦¦+¦¦+---¦¦+¦¦¦¦+  ¦¦¦         ¦¦¦¦¦¦   ¦¦¦     ¦¦¦¦¦¦¦¦+----+          
+¦¦¦  ¦¦¦¦¦¦   ¦¦¦¦¦+¦¦+ ¦¦¦         ¦¦¦¦¦¦   ¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦¦¦+          
+¦¦¦  ¦¦¦¦¦¦   ¦¦¦¦¦¦+¦¦+¦¦¦    ¦¦   ¦¦¦¦¦¦   ¦¦¦¦¦   ¦¦¦¦¦¦+----¦¦¦          
+¦¦¦¦¦¦+++¦¦¦¦¦¦++¦¦¦ +¦¦¦¦¦    +¦¦¦¦¦+++¦¦¦¦¦¦+++¦¦¦¦¦++¦¦¦¦¦¦¦¦¦¦¦          
++-----+  +-----+ +-+  +---+     +----+  +-----+  +----+ +-++------+          
                                                                              
-██████╗ ██████╗  ██████╗     ██████╗  █████╗ ██████╗ ███████╗███████╗██████╗ 
-██╔══██╗██╔══██╗██╔═══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗
-██████╔╝██████╔╝██║   ██║    ██████╔╝███████║██████╔╝███████╗█████╗  ██████╔╝
-██╔═══╝ ██╔══██╗██║   ██║    ██╔═══╝ ██╔══██║██╔══██╗╚════██║██╔══╝  ██╔══██╗
-██║     ██║  ██║╚██████╔╝    ██║     ██║  ██║██║  ██║███████║███████╗██║  ██║
-╚═╝     ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
+¦¦¦¦¦¦+ ¦¦¦¦¦¦+  ¦¦¦¦¦¦+     ¦¦¦¦¦¦+  ¦¦¦¦¦+ ¦¦¦¦¦¦+ ¦¦¦¦¦¦¦+¦¦¦¦¦¦¦+¦¦¦¦¦¦+ 
+¦¦+--¦¦+¦¦+--¦¦+¦¦+---¦¦+    ¦¦+--¦¦+¦¦+--¦¦+¦¦+--¦¦+¦¦+----+¦¦+----+¦¦+--¦¦+
+¦¦¦¦¦¦++¦¦¦¦¦¦++¦¦¦   ¦¦¦    ¦¦¦¦¦¦++¦¦¦¦¦¦¦¦¦¦¦¦¦¦++¦¦¦¦¦¦¦+¦¦¦¦¦+  ¦¦¦¦¦¦++
+¦¦+---+ ¦¦+--¦¦+¦¦¦   ¦¦¦    ¦¦+---+ ¦¦+--¦¦¦¦¦+--¦¦++----¦¦¦¦¦+--+  ¦¦+--¦¦+
+¦¦¦     ¦¦¦  ¦¦¦+¦¦¦¦¦¦++    ¦¦¦     ¦¦¦  ¦¦¦¦¦¦  ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦+¦¦¦  ¦¦¦
++-+     +-+  +-+ +-----+     +-+     +-+  +-++-+  +-++------++------++-+  +-+
                                                                              
                                                                                  
 
@@ -24,17 +24,17 @@ PS3='
 
 
 
- ██████╗██╗  ██╗ ██████╗  ██████╗ ███████╗███████╗    ██╗   ██╗██████╗ 
-██╔════╝██║  ██║██╔═══██╗██╔═══██╗██╔════╝██╔════╝    ██║   ██║██╔══██╗
-██║     ███████║██║   ██║██║   ██║███████╗█████╗      ██║   ██║██████╔╝
-██║     ██╔══██║██║   ██║██║   ██║╚════██║██╔══╝      ██║   ██║██╔═══╝ 
-╚██████╗██║  ██║╚██████╔╝╚██████╔╝███████║███████╗    ╚██████╔╝██║     
- ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝     ╚═════╝ ╚═╝     
+ ¦¦¦¦¦¦+¦¦+  ¦¦+ ¦¦¦¦¦¦+  ¦¦¦¦¦¦+ ¦¦¦¦¦¦¦+¦¦¦¦¦¦¦+    ¦¦+   ¦¦+¦¦¦¦¦¦+ 
+¦¦+----+¦¦¦  ¦¦¦¦¦+---¦¦+¦¦+---¦¦+¦¦+----+¦¦+----+    ¦¦¦   ¦¦¦¦¦+--¦¦+
+¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦   ¦¦¦¦¦¦   ¦¦¦¦¦¦¦¦¦¦+¦¦¦¦¦+      ¦¦¦   ¦¦¦¦¦¦¦¦¦++
+¦¦¦     ¦¦+--¦¦¦¦¦¦   ¦¦¦¦¦¦   ¦¦¦+----¦¦¦¦¦+--+      ¦¦¦   ¦¦¦¦¦+---+ 
++¦¦¦¦¦¦+¦¦¦  ¦¦¦+¦¦¦¦¦¦+++¦¦¦¦¦¦++¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦+    +¦¦¦¦¦¦++¦¦¦     
+ +-----++-+  +-+ +-----+  +-----+ +------++------+     +-----+ +-+     
                                                                        
 
 
  '
-options=("Domain Swap" "Add Numbers And Swap Case" "Email Numbers To No Numbers In Password Transfer" "Quit")
+options=("Domain Swap" "Add Numbers And Swap Case" "EmailName & Password Swap" "Password Numbers To Email Numbers Replace" "Birth Date Append & Truncate Edit" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -42,6 +42,18 @@ do
 
 read -e -p 'Bro Plz, enter that combo, Plz bro?: ' file
 ls -l '$file'
+
+echo 'Isolating All Strings Containing Gmail Domains'
+
+grep -riah -E ".*@gmail.com.*" $file > gmailmove.txt
+
+echo 'Swapping Domain Of All Gmail Strings To Hotmail'
+			
+sed -E "s/@.*:/@hotmail.com:/" gmailmove.txt > gmailtohotmail.txt            		
+
+echo 'Swapping Domain Of All Gmail Strings To Yahoo'
+			
+sed -E "s/@.*:/@yahoo.com:/" gmailmove.txt > gmailtoyahoo.txt            		
 
 echo 'Removing All Strings Containing Gmail Domains'
 
@@ -51,11 +63,19 @@ echo 'Swapping Domain Of All Remaining Strings Containing Non-Gmail Domains To G
 			
 sed -E "s/@.*:/@gmail.com:/" gmailremoved.txt > gmailadded.txt            		
 
-echo 'Strings Successfully Domain Swapped'
+echo 'Merging Domain Edits'
+
+grep -riah -E "(.*)" gmailadded.txt > mergeddomains.txt
+
+grep -riah -E "(.*)" gmailtohotmail.txt >> mergeddomains.txt
+
+grep -riah -E "(.*)" gmailtoyahoo.txt >> mergeddomains.txt
+
+echo 'Lines Successfully Domain Swapped'
 
 echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
 
-LC_ALL=C sort -Ru gmailadded.txt > domainswappedtarget.txt
+LC_ALL=C sort -Ru mergeddomains.txt > domainswappedtarget.txt
 
 clear
 
@@ -63,7 +83,7 @@ echo 'Strings Successfully Obfuscated!!!'
 
 echo 'Job Done, Cleaning Up Temporary Files'
 
-rm gmailremoved.txt
+
 
 read -p '
 
@@ -223,24 +243,30 @@ DonJuji Loves You, Press Enter To Return To Menu'
 
             ;;
        
-        "Email Numbers To No Numbers In Password Transfer")
+        "EmailName & Password Swap")
             
 
 read -e -p 'Bro Plz, enter that combo, Plz bro?: ' file
+
 ls -l '$file'
 
+dos2unix $file
 
-echo 'Prequalifying Lines For Transfer'
+echo 'Swapping EmailName With Password'
 
-grep -riah -E '^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20}$)' $file > prequalifynum2nonum.txt
+sed -E 's/^(.*)(@.*:)(.*)/\3\2\1/' $file > swapped.txt
 
-echo 'Transferring Numbers'
+echo 'Removing Special Chars From Swapped Password'
 
-sed -E 's/^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20}$)/\1\2\3\4\2/' prequalifynum2nonum.txt > parsednum2nonum.txt
+sed -E 's/(.*:.*)[_.-]/\1/' swapped.txt > specialcharfilter.txt
+
+echo 'Adding Numbers To Lines With No Numbers'
+
+sed -E 's/(.*:[a-z]{1,40}$)/\1123/' specialcharfilter.txt > parsedemailnameswap.txt
 
 echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
 
-LC_ALL=C sort -Ru prequalifynum2nonum.txt.txt > num2nonumresult.txt
+LC_ALL=C sort -Ru parsedemailnameswap.txt > emailnameresult.txt
 
 clear
 
@@ -248,6 +274,50 @@ echo 'Strings Successfully Obfuscated!!!'
 
 echo 'Job Done, Cleaning Up Temporary Files'
 
+rm prequalifynum2nonum.txt
+rm num2nonumresult.txt
+read -p '
+
+                                          
+                                          
+@@@@@@@    @@@@@@@@       @@@   @@@       
+@@@@@@@@  @@@@@@@@@      @@@@   @@@       
+@@!  @@@  !@@           @@!@!   @@!       
+!@!  @!@  !@!          !@!!@!   !@!       
+@!@  !@!  !@! @!@!@   @!! @!!   @!!       
+!@!  !!!  !!! !!@!!  !!!  !@!   !!!       
+!!:  !!!  :!!   !!:  :!!:!:!!:  !!:       
+:!:  !:!  :!:   !::  !:::!!:::   :!:      
+ :::: ::   ::: ::::       :::    :: ::::  
+:: :  :    :: :: :        :::   : :: : :  
+                                          
+DonJuji Loves You, Press Enter To Return To Menu'
+
+            ;;
+"Password Numbers To Email Numbers Replace")
+
+read -e -p 'Bro Plz, enter that combo, Plz bro?: ' file
+ls -l '$file'
+
+dos2unix $file
+
+echo 'Prequalifying Lines For Transfer'
+
+grep -riah -E '^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20})([0-9]{1,16}$)' $file > prequalifypass2num.txt
+
+echo 'Replacing Numbers'
+
+sed -E 's/^([a-z!@#$%&*._-]{1,25})([0-9]{1,16})(@.*:)([a-z!@#$%&*._-]{1,20})([0-9]{1,16}$)/\1\2\3\4\2/' prequalifypass2num.txt > parsedpass2num.txt
+
+echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
+ 
+LC_ALL=C sort -Ru parsedpass2num.txt > pass2numresult.txt
+
+clear
+
+echo 'Strings Successfully Obfuscated!!!'
+
+echo 'Job Done, Cleaning Up Temporary Files'
 
 read -p '
 
@@ -267,6 +337,92 @@ read -p '
 DonJuji Loves You, Press Enter To Return To Menu'
 
             ;;
+"Birth Date Append & Truncate Edit")
+
+read -e -p 'Bro Plz, enter that combo, Plz bro?: ' file
+ls -l '$file'
+
+dos2unix $file
+
+echo 'Prequalifying 20th Century Lines With 2 Digit Appendages'
+
+grep -riah -E '.*[a-z!@#$%^*_=+.-][6-9][0-9]$' $file > prequalify2digit20thnumext.txt
+
+echo 'Extending Numbers'
+
+sed -E 's/(..$)/19\1/' prequalify2digit20thnumext.txt  > 19added.txt
+
+echo 'Prequalifying 21st Century Lines With 2 Digit Appendages'
+
+grep -riah -E '.*[a-z!@#$%^*_=+.-]0[0-9]$' $file > prequalify2digit21stnumext.txt
+
+echo 'Extending Numbers'
+
+sed -E 's/(..$)/19\1/' prequalify2digit21stnumext.txt  > 20added.txt
+
+echo 'Adding Extended Together Lines'
+
+cat 19added.txt >> 20added.txt
+
+cat 20added.txt > extendedmix.txt
+
+echo 'Prequalifying 20th Century Lines With 4 Digit Appendages'
+
+grep -riah -E '.*[a-z!@#$%^*_=+.-]19[6-9][0-9]$' $file > prequalify4digit20thnumext.txt
+
+echo 'Truncating Numbers'
+
+sed -E 's/..(..$)/\1/' prequalify4digit20thnumext.txt  > 19truncated.txt
+
+echo 'Prequalifying 21st Century Lines With 4 Digit Appendages'
+
+grep -riah -E '.*[a-z!@#$%^*_=+.-]20[6-9][0-9]$' $file > prequalify4digit21stnumext.txt
+
+echo 'Truncating Numbers'
+
+sed -E 's/..(..$)/\1/' prequalify4digit21stnumext.txt  > 20truncated.txt
+
+echo 'Adding Truncated Lines Together'
+
+cat 19truncated.txt >> 20truncated.txt 
+
+cat 20truncated.txt > truncatedmix.txt
+
+echo 'Adding Truncated Lines To Extended Lines'
+
+cat truncatedmix.txt >> extendedmix.txt
+
+cat extendedmix.txt > finalmix.txt
+
+echo 'Done, Combo Successfully Obfuscated'
+
+echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
+
+LC_ALL=C sort -Ru finalmix.txt > parsedbirthyearedit.txt
+
+clear
+
+echo 'Job Done, Cleaning Up Temporary Files'
+
+read -p '
+
+                                          
+                                          
+@@@@@@@    @@@@@@@@       @@@   @@@       
+@@@@@@@@  @@@@@@@@@      @@@@   @@@       
+@@!  @@@  !@@           @@!@!   @@!       
+!@!  @!@  !@!          !@!!@!   !@!       
+@!@  !@!  !@! @!@!@   @!! @!!   @!!       
+!@!  !!!  !!! !!@!!  !!!  !@!   !!!       
+!!:  !!!  :!!   !!:  :!!:!:!!:  !!:       
+:!:  !:!  :!:   !::  !:::!!:::   :!:      
+ :::: ::   ::: ::::       :::    :: ::::  
+:: :  :    :: :: :        :::   : :: : :  
+                                          
+DonJuji Loves You, Press Enter To Return To Menu'
+
+            ;;
+
         "Quit")
             break
             ;;
