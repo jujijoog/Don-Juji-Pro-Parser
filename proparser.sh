@@ -344,65 +344,39 @@ ls -l '$file'
 
 dos2unix $file
 
-echo 'Prequalifying 20th Century Lines With 2 Digit Appendages'
+echo 'Edit 20th Century Lines With 2 Digit Appendages'
 
-grep -riah -E '.*[a-z!@#$%^*_=+.-][6-9][0-9]$' $file > prequalify2digit20thnumext.txt
+grep -riah -E '.*[^0-9][7-9][0-9]$' $file | sed -E 's/(..$)/19\1/' > 19added.txt
 
-echo 'Extending Numbers'
+echo 'Edit 21st Century Lines With 2 Digit Appendages'
 
-sed -E 's/(..$)/19\1/' prequalify2digit20thnumext.txt  > 19added.txt
+grep -riah -E '.*[^0-9][0-1][0-9]$' $file | sed -E 's/(..$)/20\1/' > 20added.txt
 
-echo 'Prequalifying 21st Century Lines With 2 Digit Appendages'
+echo 'Combining 2 Digit Edits'
 
-grep -riah -E '.*[a-z!@#$%^*_=+.-]0[0-9]$' $file > prequalify2digit21stnumext.txt
+cat 19added.txt 20added.txt > 2digitedits.txt
 
-echo 'Extending Numbers'
+echo 'Edit 20th Century Lines With 4 Digit Appendages'
 
-sed -E 's/(..$)/19\1/' prequalify2digit21stnumext.txt  > 20added.txt
+grep -riah -E '.*[^0-9]19[7-9][0-9]$' $file | sed -E 's/..(..$)/\1/' > 19truncated.txt
 
-echo 'Adding Extended Together Lines'
+echo 'Edit 21st Century Lines With 4 Digit Appendages'
 
-cat 19added.txt >> 20added.txt
+grep -riah -E '.*[^0-9]20[0-1][0-9]$' $file | sed -E 's/..(..$)/\1/' 20truncated.txt
 
-cat 20added.txt > extendedmix.txt
+echo 'Combining 4 Digit Edits'
 
-echo 'Prequalifying 20th Century Lines With 4 Digit Appendages'
+cat 19truncated.txt 20truncated.txt > 4digitedits.txt
 
-grep -riah -E '.*[a-z!@#$%^*_=+.-]19[6-9][0-9]$' $file > prequalify4digit20thnumext.txt
+echo 'Combining Edits, Deduping And Randomizing'
 
-echo 'Truncating Numbers'
-
-sed -E 's/..(..$)/\1/' prequalify4digit20thnumext.txt  > 19truncated.txt
-
-echo 'Prequalifying 21st Century Lines With 4 Digit Appendages'
-
-grep -riah -E '.*[a-z!@#$%^*_=+.-]20[6-9][0-9]$' $file > prequalify4digit21stnumext.txt
-
-echo 'Truncating Numbers'
-
-sed -E 's/..(..$)/\1/' prequalify4digit21stnumext.txt  > 20truncated.txt
-
-echo 'Adding Truncated Lines Together'
-
-cat 19truncated.txt >> 20truncated.txt 
-
-cat 20truncated.txt > truncatedmix.txt
-
-echo 'Adding Truncated Lines To Extended Lines'
-
-cat truncatedmix.txt >> extendedmix.txt
-
-cat extendedmix.txt > finalmix.txt
-
-echo 'Done, Combo Successfully Obfuscated'
-
-echo 'Deduping And Randomizing Strings Please Be Patient This May Take A While!!!'
-
-LC_ALL=C sort -Ru finalmix.txt > parsedbirthyearedit.txt
+cat 2digitedits.txt 4digitedits.txt |  LC_ALL=C sort -Ru > parsedbirthyearedit.txt
 
 clear
 
 echo 'Job Done, Cleaning Up Temporary Files'
+
+rm 2digitedits.txt 4digitedits.txt 19truncated.txt 20truncated.txt 19added.txt 20added.txt
 
 read -p '
 
